@@ -17,7 +17,7 @@ public class AprilTagStats extends SubsystemBase {
     
 
     public NetworkTable table = NetworkTableInstance.getDefault().getTable("limelight-miracle");
-
+    
     public void Stats() {
         
 
@@ -85,6 +85,7 @@ public class AprilTagStats extends SubsystemBase {
             Pose3d pose = getBotPose();
             if (pose != null) {
                 // Position data
+                //System.out.println("pose in not null");
                 SmartDashboard.putNumber("Limelight" + "/Position/X", pose.getX());
                 SmartDashboard.putNumber("Limelight" + "/Position/Y", pose.getY());
                 SmartDashboard.putNumber("Limelight" + "/Position/Z", pose.getZ());
@@ -107,6 +108,7 @@ public class AprilTagStats extends SubsystemBase {
             SmartDashboard.putNumber("Limelight" + "/Rotation/Pitch", 0);
             SmartDashboard.putNumber("Limelight" + "/Rotation/Yaw", 0);
             SmartDashboard.putNumber("Limelight" + "/Distance", 0);
+            System.out.println("Pose is empty");
         }
     }
 
