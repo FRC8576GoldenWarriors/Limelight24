@@ -17,7 +17,7 @@ public class AprilTagStats extends SubsystemBase {
     
 
     public NetworkTable table = NetworkTableInstance.getDefault().getTable("limelight-miracle");
-    
+    //stats
     public void Stats() {
         
 
